@@ -1,0 +1,97 @@
+.pageWrapper {
+  min-height: 100vh;
+}
+.contentArea {
+  flex-grow: 1;
+}
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.card {
+  box-shadow: $card-box-shadow;
+  margin-bottom: 30px;
+}
+
+.circle-box {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 100%;
+  &.lg-box {
+    width: 60px;
+    height: 60px;
+    font-size: 21px;
+    line-height: 60px;
+  }
+}
+.button-group .btn {
+  margin: 3px;
+}
+
+.carousel-container {
+  
+}
+
+.selected-image {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 8px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__images {
+  display: flex;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel__image-selected {
+  border: 3px solid #ffa700 !important;
+}
+
+.carousel__image {
+  margin-right: 10px;
+  height: 80px;
+  min-width: 80px;
+  border: 3px solid #ffa70000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-overlay {
+  
+  height: 300px;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 8px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.selected-image:hover .image-overlay {
+  opacity: 1;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 100%;
+}
+
+.carousel__button-left {
+  left: 10px;
+}
+
+.carousel__button-right {
+  right: 10px;
+}
